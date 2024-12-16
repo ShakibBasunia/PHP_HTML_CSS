@@ -1,0 +1,147 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Roboto:wght@300&display=swap');
+
+/* Color Variables */
+:root {
+    --eerie-black: #1b1b1b;
+    --raisin-black: #2e2e2e;
+    --main-color: #fa5353;
+    --second-color: #5f3dad;
+    --background-color: #181b2b;
+    --light-text: #f0f0f0;
+    --button-hover: #c4302b;
+    --input-bg: rgba(255, 255, 255, 0.1);
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background: url("assets/images/Gamer-como.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: var(--light-text);
+    line-height: 1.6;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+/* Page container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Title */
+h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Input and Buttons */
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: var(--input-bg);
+    color: var(--light-text);
+}
+
+input[type="url"]:focus {
+    outline: none;
+    border-color: var(--main-color);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: var(--second-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+/* Back Button */
+.btn-secondary {
+    padding: 10px 20px;
+    background-color: var(--raisin-black);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-secondary:hover {
+    background-color: var(--main-color);
+}
+
+/* Alert Message */
+.alert {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--main-color);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    button,
+    .btn-secondary {
+        width: 100%;
+    }
+}

@@ -1,0 +1,187 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+/* Root Variables */
+:root {
+    --primary-bg: #0b132b; /* Dark blue */
+    --secondary-bg: rgba(255, 255, 255, 0.1); /* Translucent background for glass effect */
+    --text-color: #ffffff; /* White */
+    --highlight-color: #fa5353; /* Bright Red */
+    --border-color: rgba(255, 255, 255, 0.2);
+    --sidebar-bg: #1c2541; /* Darker blue for sidebar */
+    --font-family: 'Poppins', sans-serif;
+    --button-bg: #5f3dad; /* Purple button */
+    --button-hover-bg: #7745d0; /* Hover effect */
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--font-family);
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--primary-bg) url('assets/images/gaming-bg.jpg') no-repeat center center/cover;
+    overflow-x: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: var(--sidebar-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidebar .sidebar-menu {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.sidebar .sidebar-menu li {
+    margin-bottom: 1.5rem;
+}
+
+.sidebar .sidebar-menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar .sidebar-menu a:hover {
+    color: var(--highlight-color);
+}
+
+/* Navbar */
+.navbar {
+    padding: 2rem;
+    margin-left: 200px;
+    background: var(--primary-bg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-title {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Container */
+.container {
+    margin-left: 270px;
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.table {
+    width:90%;
+    border-collapse: collapse;
+    background: var(--secondary-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.table th, .table td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.table th {
+    background: var(--highlight-color);
+    color: #fff;
+}
+
+.table tr:nth-child(even) {
+    background: var(--secondary-bg);
+}
+
+.table img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--button-bg);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: var(--button-hover-bg);
+}
+
+.btn-danger {
+    background: #dc3545;
+}
+
+.btn-danger:hover {
+    background: #b02a37;
+}
+
+/* Form */
+form {
+    background: var(--secondary-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    background: transparent;
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+
+form label {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+form .btn {
+    width: 100%;
+}
